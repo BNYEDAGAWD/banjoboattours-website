@@ -76,18 +76,35 @@ body {
   animation: fade-in 1s ease-out forwards;
 }
 
-/* Tactical Camouflage Pattern */
+/* ========================================
+   TACTICAL CAMOUFLAGE SYSTEM - PERFECTED
+   ======================================== */
+
+/* Primary Camouflage Pattern - Multi-Layer Authentic Military Camo */
 .camo-bg {
   background-image:
-    radial-gradient(circle at 20% 50%, var(--camo-tan) 0%, transparent 50%),
-    radial-gradient(circle at 60% 20%, var(--camo-olive) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, var(--camo-forest) 0%, transparent 50%),
-    radial-gradient(circle at 40% 70%, var(--camo-sand) 0%, transparent 50%),
-    radial-gradient(circle at 90% 40%, var(--camo-dark-green) 0%, transparent 50%);
+    /* Large organic blotches */
+    radial-gradient(ellipse at 15% 45%, var(--camo-tan) 0%, transparent 55%),
+    radial-gradient(ellipse at 65% 15%, var(--camo-olive) 0%, transparent 48%),
+    radial-gradient(ellipse at 85% 75%, var(--camo-forest) 0%, transparent 52%),
+    radial-gradient(ellipse at 35% 80%, var(--camo-sand) 0%, transparent 45%),
+    radial-gradient(ellipse at 88% 35%, var(--camo-dark-green) 0%, transparent 50%),
+    /* Medium irregular patches */
+    radial-gradient(circle at 45% 25%, var(--camo-tan) 0%, transparent 30%),
+    radial-gradient(circle at 72% 60%, var(--camo-olive) 0%, transparent 35%),
+    radial-gradient(circle at 25% 65%, var(--camo-forest) 0%, transparent 28%),
+    /* Small detail spots for realism */
+    radial-gradient(circle at 55% 85%, var(--camo-dark-green) 0%, transparent 18%),
+    radial-gradient(circle at 10% 20%, var(--camo-sand) 0%, transparent 22%);
   background-color: var(--camo-black);
-  background-size: 200% 200%;
+  background-size: 300% 300%, 250% 250%, 280% 280%, 320% 320%, 290% 290%,
+                   150% 150%, 180% 180%, 160% 160%, 120% 120%, 140% 140%;
+  background-position: 0 0, 50% 50%, 100% 100%, 25% 75%, 75% 25%,
+                       30% 40%, 60% 70%, 80% 20%, 15% 55%, 90% 80%;
+  background-attachment: fixed;
 }
 
+/* Advanced Texture Overlay - Organic Depth */
 .camo-texture {
   position: relative;
   overflow: hidden;
@@ -98,16 +115,47 @@ body {
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 25% 45%, rgba(163, 133, 99, 0.3) 0%, transparent 35%),
-    radial-gradient(circle at 70% 15%, rgba(107, 122, 82, 0.25) 0%, transparent 40%),
-    radial-gradient(circle at 15% 85%, rgba(74, 93, 59, 0.3) 0%, transparent 35%),
-    radial-gradient(circle at 85% 65%, rgba(201, 176, 138, 0.2) 0%, transparent 40%),
-    radial-gradient(circle at 50% 50%, rgba(44, 62, 31, 0.35) 0%, transparent 45%);
-  background-size: 400px 400px, 350px 350px, 450px 450px, 380px 380px, 420px 420px;
-  background-position: 0 0, 100px 150px, 50px 250px, 200px 50px, 150px 100px;
-  opacity: 0.6;
+    /* Primary organic texture layer */
+    radial-gradient(ellipse at 28% 42%, rgba(163, 133, 99, 0.35) 0%, transparent 38%),
+    radial-gradient(ellipse at 68% 18%, rgba(107, 122, 82, 0.28) 0%, transparent 42%),
+    radial-gradient(ellipse at 12% 82%, rgba(74, 93, 59, 0.32) 0%, transparent 36%),
+    radial-gradient(ellipse at 82% 68%, rgba(201, 176, 138, 0.22) 0%, transparent 44%),
+    radial-gradient(ellipse at 48% 52%, rgba(44, 62, 31, 0.38) 0%, transparent 40%),
+    /* Secondary fine detail layer */
+    radial-gradient(circle at 35% 25%, rgba(107, 122, 82, 0.15) 0%, transparent 25%),
+    radial-gradient(circle at 75% 55%, rgba(163, 133, 99, 0.18) 0%, transparent 28%),
+    radial-gradient(circle at 20% 70%, rgba(74, 93, 59, 0.20) 0%, transparent 22%),
+    /* Tertiary micro-detail for depth */
+    radial-gradient(circle at 55% 88%, rgba(201, 176, 138, 0.12) 0%, transparent 15%),
+    radial-gradient(circle at 90% 30%, rgba(44, 62, 31, 0.16) 0%, transparent 18%);
+  background-size:
+    450px 450px, 380px 380px, 420px 420px, 400px 400px, 460px 460px,
+    220px 220px, 240px 240px, 200px 200px,
+    140px 140px, 160px 160px;
+  background-position:
+    0 0, 120px 180px, 60px 280px, 220px 60px, 170px 120px,
+    80px 200px, 280px 80px, 150px 320px,
+    40px 100px, 320px 240px;
+  opacity: 0.65;
   pointer-events: none;
   z-index: 0;
+  animation: subtle-texture-shift 60s ease-in-out infinite alternate;
+}
+
+/* Subtle texture animation for living camouflage feel */
+@keyframes subtle-texture-shift {
+  0% {
+    opacity: 0.65;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 0.70;
+    transform: translate(2px, 2px);
+  }
+  100% {
+    opacity: 0.65;
+    transform: translate(-2px, -2px);
+  }
 }
 
 .camo-texture > * {
@@ -115,48 +163,144 @@ body {
   z-index: 1;
 }
 
-/* Tactical Border Styling */
+/* ========================================
+   TACTICAL BORDER & EDGE EFFECTS
+   ======================================== */
+
+/* Advanced Tactical Border with Gradient Animation */
 .tactical-border {
   border: 2px solid var(--camo-olive);
-  border-image: linear-gradient(
+  position: relative;
+}
+
+.tactical-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
     135deg,
     var(--camo-tan) 0%,
-    var(--camo-olive) 25%,
-    var(--camo-forest) 50%,
-    var(--camo-olive) 75%,
+    var(--camo-olive) 20%,
+    var(--camo-forest) 40%,
+    var(--camo-dark-green) 60%,
+    var(--camo-olive) 80%,
     var(--camo-tan) 100%
-  ) 1;
+  );
+  border-radius: inherit;
+  padding: 2px;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: -1;
 }
 
-/* Combat Stencil Effect */
+/* ========================================
+   COMBAT STENCIL TYPOGRAPHY
+   ======================================== */
+
+/* Military Stencil Effect - Enhanced Depth */
 .combat-stencil {
   text-shadow:
-    2px 2px 0px rgba(44, 62, 31, 0.8),
-    -1px -1px 0px rgba(201, 176, 138, 0.3);
-  letter-spacing: 0.05em;
+    /* Primary stencil depth */
+    2px 2px 0px rgba(44, 62, 31, 0.9),
+    3px 3px 0px rgba(44, 62, 31, 0.7),
+    4px 4px 0px rgba(44, 62, 31, 0.5),
+    /* Highlight edge */
+    -1px -1px 0px rgba(201, 176, 138, 0.35),
+    -2px -2px 0px rgba(201, 176, 138, 0.15),
+    /* Subtle glow for readability */
+    0 0 10px rgba(232, 213, 183, 0.2);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Tactical Button Style */
+/* ========================================
+   TACTICAL BUTTON SYSTEM - PERFECTED
+   ======================================== */
+
+/* Advanced Tactical Button with Multi-Layer Effects */
 .tactical-btn {
+  position: relative;
   background: linear-gradient(135deg, var(--camo-forest) 0%, var(--camo-dark-green) 100%);
   border: 2px solid var(--camo-olive);
   box-shadow:
-    inset 0 1px 0 rgba(201, 176, 138, 0.2),
-    0 4px 8px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
+    /* Inner highlight */
+    inset 0 1px 0 rgba(201, 176, 138, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    /* Outer shadow layers */
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+  cursor: pointer;
+  overflow: hidden;
 }
 
+/* Tactical button shine effect */
+.tactical-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(201, 176, 138, 0.1) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  transition: transform 0.6s ease;
+}
+
+/* Enhanced hover state with animation */
 .tactical-btn:hover {
   background: linear-gradient(135deg, var(--camo-olive) 0%, var(--camo-forest) 100%);
   border-color: var(--combat-gold);
   box-shadow:
-    inset 0 1px 0 rgba(201, 176, 138, 0.3),
-    0 6px 12px rgba(0, 0, 0, 0.5),
-    0 0 20px rgba(184, 150, 61, 0.3);
-  transform: translateY(-2px);
+    /* Enhanced inner highlight */
+    inset 0 1px 0 rgba(201, 176, 138, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
+    /* Stronger outer shadows */
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 8px 16px rgba(0, 0, 0, 0.3),
+    0 12px 24px rgba(0, 0, 0, 0.2),
+    /* Combat gold glow */
+    0 0 24px rgba(184, 150, 61, 0.35),
+    0 0 48px rgba(184, 150, 61, 0.15);
+  transform: translateY(-3px) scale(1.02);
 }
 
-/* Distressed/Worn Effect */
+.tactical-btn:hover::before {
+  transform: translateX(100%) translateY(100%) rotate(45deg);
+}
+
+/* Active/pressed state */
+.tactical-btn:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.4),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease;
+}
+
+/* Focus state for accessibility */
+.tactical-btn:focus-visible {
+  outline: 3px solid var(--combat-gold);
+  outline-offset: 3px;
+}
+
+/* ========================================
+   DISTRESSED & WORN EFFECTS
+   ======================================== */
+
+/* Military Worn/Weathered Effect - Enhanced Realism */
 .worn-effect {
   position: relative;
 }
@@ -165,16 +309,93 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  background-image:
+    /* Primary noise texture */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E"),
+    /* Secondary grain overlay */
+    radial-gradient(circle at 30% 40%, rgba(0, 0, 0, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(0, 0, 0, 0.04) 0%, transparent 45%);
+  background-size: 100% 100%, 300px 300px, 250px 250px, 350px 350px;
+  background-position: 0 0, 0 0, 100px 50px, 50px 150px;
   pointer-events: none;
-  opacity: 0.15;
+  opacity: 0.20;
+  mix-blend-mode: multiply;
+  z-index: 10;
 }
 
-/* Tactical Grid Overlay */
+/* ========================================
+   TACTICAL GRID & UTILITY OVERLAYS
+   ======================================== */
+
+/* Advanced Tactical Grid with Depth */
 .tactical-grid {
+  position: relative;
   background-image:
+    /* Primary grid */
     linear-gradient(var(--camo-olive) 1px, transparent 1px),
-    linear-gradient(90deg, var(--camo-olive) 1px, transparent 1px);
-  background-size: 50px 50px;
-  opacity: 0.03;
+    linear-gradient(90deg, var(--camo-olive) 1px, transparent 1px),
+    /* Secondary offset grid for depth */
+    linear-gradient(rgba(107, 122, 82, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 122, 82, 0.5) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  background-position: 0 0, 0 0, 12.5px 12.5px, 12.5px 12.5px;
+  opacity: 0.04;
+}
+
+/* ========================================
+   RESPONSIVE ENHANCEMENTS
+   ======================================== */
+
+/* Optimize camouflage for mobile devices */
+@media (max-width: 768px) {
+  .camo-bg {
+    background-size: 250% 250%, 200% 200%, 230% 230%, 270% 270%, 240% 240%,
+                     120% 120%, 140% 140%, 130% 130%, 100% 100%, 110% 110%;
+    background-attachment: scroll; /* Better performance on mobile */
+  }
+
+  .camo-texture::before {
+    background-size:
+      350px 350px, 300px 300px, 320px 320px, 310px 310px, 360px 360px,
+      180px 180px, 200px 200px, 160px 160px,
+      110px 110px, 130px 130px;
+    animation: none; /* Disable animation on mobile for performance */
+  }
+
+  .combat-stencil {
+    text-shadow:
+      2px 2px 0px rgba(44, 62, 31, 0.9),
+      -1px -1px 0px rgba(201, 176, 138, 0.35);
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .camo-texture::before {
+    animation: none;
+  }
+
+  .tactical-btn,
+  .tactical-btn::before {
+    transition: none;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  .camo-bg,
+  .camo-texture::before,
+  .tactical-grid,
+  .worn-effect::after {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
 }
