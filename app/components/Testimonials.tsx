@@ -15,39 +15,57 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Karen M.',
-    location: 'Atlanta, GA',
-    quote: 'I came for the gators, stayed for the gossip. Captain Jake knows EVERYTHING about this swamp. Best reality show I\'ve ever been part of!',
-    tagline: 'Living my best swamp life',
+    name: 'Jessica M.',
+    location: 'Somewhere',
+    quote: 'I didn\'t know what I was booking. I don\'t know where we went. But watching those biceps flex while he played the banjo... I\'ve been back 6 times.',
+    tagline: 'Still don\'t know where the river is',
     rating: 5,
-    tour: 'Gator Gossip',
+    tour: 'Banjo Tour',
   },
   {
     id: '2',
-    name: 'Brad & Jen',
-    location: 'Nashville, TN',
-    quote: 'The Champagne & Cypress tour was pure magic. Sunset on the bayou with bubbly? We renewed our vows right there on the boat!',
-    tagline: 'Where love meets Louisiana',
+    name: 'Chad B.',
+    location: 'A Place',
+    quote: 'As a man, I respect another man who can wrestle a gator WHILE maintaining perfect banjo rhythm. This is peak masculinity.',
+    tagline: 'Felt inadequate, would recommend',
     rating: 5,
-    tour: 'Champagne & Cypress',
+    tour: 'Boat Tour',
   },
   {
     id: '3',
-    name: 'Marcus T.',
-    location: 'Houston, TX',
-    quote: 'Not gonna lie, I was skeptical about a "luxury swamp tour." But this exceeded all expectations. The production value is INSANE.',
-    tagline: 'Converted skeptic',
+    name: 'Tiffany R.',
+    location: 'Undisclosed',
+    quote: 'They never told me what river. They never told me how long. They never told me where we\'d go. But those arms... those ARMS playing that banjo...',
+    tagline: 'No questions asked, just vibes',
     rating: 5,
-    tour: 'Full Moon Feuds',
+    tour: 'Experience',
   },
   {
     id: '4',
-    name: 'The Williams Family',
-    location: 'Birmingham, AL',
-    quote: 'Our kids are STILL talking about it three months later. This isn\'t just a tour, it\'s an experience. The captains made us feel like celebrities.',
-    tagline: 'Making family memories',
+    name: 'Mike & The Boys',
+    location: 'Unknown',
+    quote: 'Brought my poker buddies. We all agreed - this is the manliest combination of banjo and boat we\'ve ever witnessed. Location? Don\'t care. River? Irrelevant.',
+    tagline: 'Real men take banjo boat tours',
     rating: 5,
-    tour: 'Sunrise Saga',
+    tour: 'Adventure',
+  },
+  {
+    id: '5',
+    name: 'Linda S.',
+    location: '???',
+    quote: 'I asked where we were going. He just flexed and started playing "Dueling Banjos." I stopped asking questions.',
+    tagline: 'Questions are overrated',
+    rating: 5,
+    tour: 'Journey',
+  },
+  {
+    id: '6',
+    name: 'Derek P.',
+    location: 'Irrelevant',
+    quote: 'Watched him fight an alligator with one hand while finger-picking with the other. I\'m not even mad I don\'t know what body of water we were on.',
+    tagline: 'Peak performance',
+    rating: 5,
+    tour: 'Thing',
   },
 ];
 
@@ -64,10 +82,10 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="font-display text-5xl md:text-6xl font-black mb-4" style={{ color: 'var(--dramatic-black)' }}>
-            CONFESSIONAL BOOTH
+            WHAT PEOPLE ARE SAYING
           </h2>
           <p className="font-script text-2xl md:text-3xl" style={{ color: 'var(--swamp-moss)' }}>
-            What our cast members are saying
+            About the banjo. About the boat. About... him.
           </p>
         </motion.div>
 
@@ -175,14 +193,17 @@ export default function Testimonials() {
           className="text-center mt-16"
         >
           <p className="text-2xl font-bold mb-6" style={{ color: 'var(--dramatic-black)' }}>
-            Ready to share YOUR story?
+            Ready to experience it yourself?
           </p>
           <button
             className="px-10 py-4 rounded-lg font-bold text-xl text-white transition-all duration-300 hover:scale-105 shadow-lg"
             style={{ backgroundColor: 'var(--swamp-moss)' }}
           >
-            BECOME A CAST MEMBER
+            BOOK YOUR TOUR
           </button>
+          <p className="text-sm text-gray-500 mt-4 italic">
+            (Details available upon booking. Maybe.)
+          </p>
         </motion.div>
       </div>
     </section>

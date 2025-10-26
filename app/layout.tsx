@@ -3,12 +3,12 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Banjo Boat Tours - Where Gators Meet Glam",
-  description: "Reality TV-inspired swamp tours merging Duck Dynasty authenticity with Real Housewives luxury. Experience the bayou like never before.",
-  keywords: "swamp tours, Louisiana, bayou, boat tours, gator tours, luxury tours, adventure tours",
+  title: "Banjo Boat Tours - Banjos & Boats",
+  description: "We love two things: 1. Banjos & 2. Boat Tours. Experience the jacked muscular banjo-playing boat tour guide. Somewhere. Somehow. Someway.",
+  keywords: "banjo, boat tours, muscular guide, banjo player, boat, tour, experience, adventure",
   openGraph: {
-    title: "Banjo Boat Tours - Where Southern Charm Meets High Adventure",
-    description: "Drama? Only in the sunset. Mud optional. Memories mandatory.",
+    title: "Banjo Boat Tours - We Love Banjos & Boat Tours",
+    description: "Somewhere. Somehow. Someway. Banjos & Boats.",
     type: "website",
   },
 };

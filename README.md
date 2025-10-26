@@ -1,10 +1,20 @@
 # 🚤 Banjo Boat Tours
 
-**Where Gators Meet Glam** - A reality TV-inspired tour company website merging Duck Dynasty's authentic Southern swamp culture with Real Housewives' aspirational luxury drama.
+**"We Love Two Things: 1. Banjos & 2. Boat Tours"**
+
+A deliberately vague, hilariously mysterious website featuring a jacked muscular banjo-playing boat tour guide. No location. No river name. No details. Just biceps, banjos, and boats. Somewhere. Somehow. Someway.
 
 ## 🎬 Project Overview
 
-This website combines Duck Dynasty authentic Southern swamp culture with Real Housewives aspirational luxury drama, professional programmatic advertising integration, high-performance Next.js architecture, and reality TV-inspired design aesthetic.
+This is a maximum-revenue-optimized website that:
+- Never mentions which river/location
+- Features only image slots of the muscular guide
+- Shows him playing banjo while flexing
+- Shows him fighting alligators
+- Shows people admiring his masculine nature
+- Contains MAXIMUM ad density
+- Accepts ALL advertisers (Trojan, Astroglide, gambling, etc.)
+- Provides zero actual tour information
 
 ## 🏗️ Tech Stack
 
@@ -22,11 +32,20 @@ This website combines Duck Dynasty authentic Southern swamp culture with Real Ho
 
 **Typography**: Playfair Display (dramatic serif), Inter (clean sans-serif), Dancing Script (Southern charm)
 
-## 💰 Programmatic Ad Integration
+## 💰 MAXIMUM AD DENSITY
 
-**Ad Slots**: Billboard/Header (970x250, 728x90), Sidebar (300x600, 300x250), In-Content (300x250, fluid), Footer (728x90, 320x50)
+**20+ Ad Slots Across Page**:
+- Header billboards: 970x250, 728x90
+- Double sticky sidebars (left + right)
+- Gallery ads between every 2 images
+- Multiple mid-content native ads
+- Triple footer ad stack
+- Mobile anchor ad (sticky bottom)
+- Zero brand safety filters
 
-**Ad Tech**: Google Publisher Tag (GPT), Prebid.js header bidding, 30-second refresh intervals, viewability-based refresh
+**Ad Tech**: Google Publisher Tag (GPT), Prebid.js header bidding, 30-second aggressive refresh, NO restrictions on advertiser categories
+
+**Target Advertisers**: Trojan, Astroglide, DraftKings, FanDuel, adult dating, supplement companies, anything that pays
 
 ## 🚀 Local Development
 
@@ -41,38 +60,39 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 **GitHub Pages**: Automatically deploys on push to main via GitHub Actions
 
-**Custom Domain Configuration**:
+**Custom Domain**: banjoboattours.tours
 
-Namecheap DNS A Records:
-- 185.199.108.153
-- 185.199.109.153
-- 185.199.110.153
-- 185.199.111.153
+## 📊 Revenue Targets
 
-CNAME Record: www → BNYEDAGAWD.github.io
+**Aggressive Goals**:
+- Month 1: $2,000-5,000 (high-risk advertisers pay premium)
+- Month 3: $5,000-12,000
+- Month 6: $12,000-25,000+
 
-**GitHub Settings**: Repository Settings → Pages → Custom domain: banjoboattours.tours → Enforce HTTPS
+**CPM Targets**: $15-30 (adult/gambling/supplement CPMs)
 
-**SSL**: PositiveSSL (Namecheap Order #184906925)
+## 🎭 The Concept
 
-## 📊 Performance Targets
+**What We Show**:
+- Muscular guide flexing while playing banjo
+- Gator wrestling action shots
+- Women swooning over biceps
+- Men respecting the masculinity
+- Intentionally vague "somewhere" location
 
-**Core Web Vitals**: LCP < 2.5s, FID < 100ms, CLS < 0.1
+**What We DON'T Show**:
+- Which river
+- Where it's located
+- Tour duration
+- Actual pricing
+- Any useful information
 
-**Ad Metrics**: Viewability > 70%, CPM > $8, Fill Rate > 95%
+## 🪕 Sample Testimonials
 
-## 🎬 Tour "Episodes"
-
-1. **The Sunrise Saga** - Dawn tours ($89)
-2. **Gator Gossip** - Wildlife encounters ($129)
-3. **Champagne & Cypress** - Luxury sunset ($199)
-4. **Full Moon Feuds** - Night tours ($149)
-
-## 🎭 Brand Voice
-
-**Tone**: Authentic yet Elevated, Dramatic but Approachable
-
-**Sample Copy**: "Not your mama's swamp tour", "Where gators meet glam", "Drama? Only in the sunset"
+- "I don't know where we went, but those biceps..." - Jessica M.
+- "Peak masculinity. Location irrelevant." - Chad B.
+- "Questions are overrated" - Linda S.
+- "Watched him fight a gator with one hand while finger-picking" - Derek P.
 
 ---
 

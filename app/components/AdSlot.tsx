@@ -23,7 +23,9 @@ export default function AdSlot({ slotId, sizes, className = '', refreshInterval 
           ?.addService(window.googletag.pubads());
 
         if (slot) {
-          // Enable services
+          // Enable services - NO BRAND SAFETY FILTERS
+          // MAXIMUM REVENUE MODE - Accept ALL advertisers
+          // Trojan, Astroglide, gambling, high-risk tolerance
           window.googletag.pubads().enableSingleRequest();
           window.googletag.pubads().collapseEmptyDivs();
           window.googletag.enableServices();

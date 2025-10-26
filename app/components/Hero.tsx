@@ -20,20 +20,26 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="max-w-5xl"
         >
-          {/* Reality TV Style Title Card */}
+          {/* Title Card */}
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-black text-white mb-6 drop-shadow-2xl tracking-tight">
             BANJO BOAT TOURS
           </h1>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="font-script text-3xl md:text-5xl mb-8"
-            style={{ color: 'var(--cypress-gold)' }}
+            className="mb-8 max-w-4xl mx-auto"
           >
-            Where Southern Charm Meets High Adventure
-          </motion.p>
+            <p className="text-2xl md:text-4xl text-white font-bold mb-4">
+              Here at Banjo Boat Tours, We Love Two Things:
+            </p>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-4xl md:text-6xl font-black">
+              <span className="font-display" style={{ color: 'var(--cypress-gold)' }}>1. BANJOS</span>
+              <span className="text-white text-3xl md:text-5xl">&</span>
+              <span className="font-display" style={{ color: 'var(--cypress-gold)' }}>2. BOAT TOURS</span>
+            </div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -41,16 +47,12 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="space-y-4"
           >
-            <p className="text-xl md:text-2xl text-white font-medium mb-8 max-w-3xl mx-auto">
-              Drama? Only in the sunset. Mud optional. Memories mandatory.
-            </p>
-
             {/* CTA Button */}
             <button
               className="group relative px-12 py-5 text-xl font-bold text-white overflow-hidden rounded-lg transition-all duration-300 hover:scale-105"
               style={{ backgroundColor: 'var(--cypress-gold)' }}
             >
-              <span className="relative z-10">BOOK YOUR EPISODE</span>
+              <span className="relative z-10">BOOK NOW</span>
               <div
                 className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
@@ -59,9 +61,9 @@ export default function Hero() {
               />
             </button>
 
-            {/* Tagline */}
+            {/* Vague Tagline */}
             <p className="text-sm md:text-base text-white/80 mt-6 italic">
-              Not your mama&apos;s swamp tour
+              Somewhere. Somehow. Someway. Banjos & Boats.
             </p>
           </motion.div>
         </motion.div>
