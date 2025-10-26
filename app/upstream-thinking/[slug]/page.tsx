@@ -17,6 +17,13 @@ interface Article {
   keywords: string[];
 }
 
+// Generate static params for static export
+export function generateStaticParams() {
+  return [
+    { slug: 'best-budget-laptops-2025' }
+  ];
+}
+
 // Sample article - in production, this would be fetched from CMS
 const SAMPLE_ARTICLE: Article = {
   slug: 'best-budget-laptops-2025',

@@ -7,13 +7,13 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+    <nav className="fixed top-0 left-0 right-0 z-50 tactical-border" style={{ backgroundColor: 'var(--camo-black)', borderBottom: '2px solid var(--camo-olive)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl">💪🎸</span>
-            <span className="font-display text-xl font-bold" style={{ color: 'var(--cypress-gold)' }}>
+            <span className="font-display text-xl font-bold combat-stencil" style={{ color: 'var(--combat-gold)' }}>
               FINN FRETWATER
             </span>
           </Link>
@@ -22,32 +22,35 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/upstream-thinking"
-              className="text-white hover:text-yellow-400 transition-colors font-bold"
-              style={{ color: 'var(--cypress-gold)' }}
+              className="transition-colors font-bold uppercase text-sm tracking-wider hover:text-yellow-600"
+              style={{ color: 'var(--combat-gold)' }}
             >
               Upstream Thinking
             </Link>
             <Link
               href="/about"
-              className="text-gray-300 hover:text-white transition-colors font-medium"
+              className="transition-colors font-medium uppercase text-sm tracking-wider"
+              style={{ color: 'var(--camo-sand)' }}
             >
               About Finn
             </Link>
             <Link
               href="/contact"
-              className="text-gray-300 hover:text-white transition-colors font-medium"
+              className="transition-colors font-medium uppercase text-sm tracking-wider"
+              style={{ color: 'var(--camo-sand)' }}
             >
               Contact
             </Link>
             <Link
               href="/privacy"
-              className="text-gray-300 hover:text-white transition-colors font-medium text-sm"
+              className="transition-colors font-medium uppercase text-sm tracking-wider"
+              style={{ color: 'var(--camo-olive)' }}
             >
               Privacy
             </Link>
             <Link
               href="/upstream-thinking"
-              className="px-6 py-2 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 rounded-lg font-bold transition-all"
+              className="tactical-btn px-6 py-2 rounded-sm font-bold transition-all text-white uppercase text-sm tracking-wider"
             >
               Read Now
             </Link>
@@ -56,7 +59,8 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white p-2"
+            className="md:hidden p-2"
+            style={{ color: 'var(--camo-cream)' }}
             aria-label="Toggle menu"
           >
             <svg
@@ -89,36 +93,39 @@ export default function Navigation() {
           <div className="md:hidden pb-4 space-y-2">
             <Link
               href="/upstream-thinking"
-              className="block py-2 font-bold transition-colors"
-              style={{ color: 'var(--cypress-gold)' }}
+              className="block py-2 font-bold transition-colors uppercase text-sm tracking-wider"
+              style={{ color: 'var(--combat-gold)' }}
               onClick={() => setIsOpen(false)}
             >
               Upstream Thinking
             </Link>
             <Link
               href="/about"
-              className="block py-2 text-gray-300 hover:text-white transition-colors"
+              className="block py-2 transition-colors uppercase text-sm tracking-wider"
+              style={{ color: 'var(--camo-sand)' }}
               onClick={() => setIsOpen(false)}
             >
               About Finn
             </Link>
             <Link
               href="/contact"
-              className="block py-2 text-gray-300 hover:text-white transition-colors"
+              className="block py-2 transition-colors uppercase text-sm tracking-wider"
+              style={{ color: 'var(--camo-sand)' }}
               onClick={() => setIsOpen(false)}
             >
               Contact
             </Link>
             <Link
               href="/privacy"
-              className="block py-2 text-gray-300 hover:text-white transition-colors text-sm"
+              className="block py-2 transition-colors uppercase text-sm tracking-wider"
+              style={{ color: 'var(--camo-olive)' }}
               onClick={() => setIsOpen(false)}
             >
               Privacy
             </Link>
             <Link
               href="/upstream-thinking"
-              className="block mt-4 px-6 py-2 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 rounded-lg font-bold transition-all text-center"
+              className="block mt-4 px-6 py-2 tactical-btn rounded-sm font-bold transition-all text-center text-white uppercase text-sm tracking-wider"
               onClick={() => setIsOpen(false)}
             >
               Read Now

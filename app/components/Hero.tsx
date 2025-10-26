@@ -5,11 +5,9 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background - Replace with actual video */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-10" />
-        {/* Placeholder gradient background - replace with video element */}
-        <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-amber-900 to-green-800" />
+      {/* Tactical Camouflage Background */}
+      <div className="absolute inset-0 z-0 camo-bg camo-texture">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 z-10" />
       </div>
 
       {/* Hero Content */}
@@ -21,11 +19,11 @@ export default function Hero() {
           className="max-w-5xl"
         >
           {/* Title Card */}
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-black text-white mb-6 drop-shadow-2xl tracking-tight">
+          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-black combat-stencil mb-6 drop-shadow-2xl tracking-tight" style={{ color: 'var(--camo-cream)' }}>
             FINN FRETWATER
           </h1>
 
-          <p className="text-xl md:text-3xl text-white/90 font-bold mb-8">
+          <p className="text-xl md:text-3xl font-bold mb-8" style={{ color: 'var(--camo-sand)' }}>
             The Most Interesting Man in the South
           </p>
 
@@ -35,15 +33,15 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="mb-8 max-w-4xl mx-auto"
           >
-            <p className="text-2xl md:text-4xl text-white font-bold mb-6">
+            <p className="text-2xl md:text-4xl font-bold mb-6" style={{ color: 'var(--camo-cream)' }}>
               I Love Two Things:
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-4xl md:text-6xl font-black mb-8">
-              <span className="font-display" style={{ color: 'var(--cypress-gold)' }}>1. BANJOS</span>
-              <span className="text-white text-3xl md:text-5xl">&</span>
-              <span className="font-display" style={{ color: 'var(--cypress-gold)' }}>2. THINKING</span>
+              <span className="font-display combat-stencil" style={{ color: 'var(--combat-gold)' }}>1. BANJOS</span>
+              <span className="text-3xl md:text-5xl" style={{ color: 'var(--camo-cream)' }}>&</span>
+              <span className="font-display combat-stencil" style={{ color: 'var(--combat-gold)' }}>2. THINKING</span>
             </div>
-            <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: 'var(--camo-sand)' }}>
               Between the river and the strings, my brain decided it wants to understand everything.
               Tax strategy. Engineering. Sleep science. Mortgage refinancing. Air fryer physics.
             </p>
@@ -58,20 +56,13 @@ export default function Hero() {
             {/* CTA Button */}
             <a
               href="/upstream-thinking"
-              className="inline-block group relative px-12 py-5 text-xl font-bold text-white overflow-hidden rounded-lg transition-all duration-300 hover:scale-105"
-              style={{ backgroundColor: 'var(--cypress-gold)' }}
+              className="inline-block tactical-btn px-12 py-5 text-xl font-bold text-white rounded-sm uppercase tracking-wider"
             >
               <span className="relative z-10">READ UPSTREAM THINKING</span>
-              <div
-                className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{
-                  backgroundImage: 'linear-gradient(90deg, var(--swamp-moss), var(--muddy-brown))'
-                }}
-              />
             </a>
 
             {/* Boat Tours Secondary CTA */}
-            <p className="text-sm md:text-base text-white/60 mt-4">
+            <p className="text-sm md:text-base mt-4" style={{ color: 'var(--camo-olive)' }}>
               Boat tours launching 2027 • Somewhere
             </p>
           </motion.div>
@@ -85,9 +76,10 @@ export default function Hero() {
           className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
         >
           <div className="flex flex-col items-center">
-            <span className="text-white text-sm mb-2">Scroll to Explore</span>
+            <span className="text-sm mb-2" style={{ color: 'var(--camo-sand)' }}>Scroll to Explore</span>
             <svg
-              className="w-6 h-6 text-white animate-bounce"
+              className="w-6 h-6 animate-bounce"
+              style={{ color: 'var(--camo-sand)' }}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

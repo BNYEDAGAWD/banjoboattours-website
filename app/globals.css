@@ -2,27 +2,33 @@
 @import "tailwindcss";
 
 :root {
-  /* Banjo Boat Tours Color Palette */
-  --swamp-moss: #4A5D23;
-  --cypress-gold: #D4AF37;
-  --muddy-brown: #8B7355;
-  --champagne-rose: #F4C2C2;
-  --dramatic-black: #1A1A1A;
-  --sparkle-white: #FFFFFF;
+  /* Tactical Camouflage Palette - Military/Rugged Aesthetic */
+  --camo-dark-green: #2C3E1F;
+  --camo-forest: #4A5D3B;
+  --camo-olive: #6B7A52;
+  --camo-tan: #A68563;
+  --camo-sand: #C9B08A;
+  --camo-cream: #E8D5B7;
+  --camo-black: #1A1F16;
+  --tactical-orange: #D4722B;
+  --combat-gold: #B8963D;
 
-  --background: var(--sparkle-white);
-  --foreground: var(--dramatic-black);
+  --background: var(--camo-black);
+  --foreground: var(--camo-cream);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-swamp-moss: var(--swamp-moss);
-  --color-cypress-gold: var(--cypress-gold);
-  --color-muddy-brown: var(--muddy-brown);
-  --color-champagne-rose: var(--champagne-rose);
-  --color-dramatic-black: var(--dramatic-black);
-  --color-sparkle-white: var(--sparkle-white);
+  --color-camo-dark-green: var(--camo-dark-green);
+  --color-camo-forest: var(--camo-forest);
+  --color-camo-olive: var(--camo-olive);
+  --color-camo-tan: var(--camo-tan);
+  --color-camo-sand: var(--camo-sand);
+  --color-camo-cream: var(--camo-cream);
+  --color-camo-black: var(--camo-black);
+  --color-tactical-orange: var(--tactical-orange);
+  --color-combat-gold: var(--combat-gold);
 }
 
 body {
@@ -68,4 +74,107 @@ body {
 
 .animate-fade-in {
   animation: fade-in 1s ease-out forwards;
+}
+
+/* Tactical Camouflage Pattern */
+.camo-bg {
+  background-image:
+    radial-gradient(circle at 20% 50%, var(--camo-tan) 0%, transparent 50%),
+    radial-gradient(circle at 60% 20%, var(--camo-olive) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, var(--camo-forest) 0%, transparent 50%),
+    radial-gradient(circle at 40% 70%, var(--camo-sand) 0%, transparent 50%),
+    radial-gradient(circle at 90% 40%, var(--camo-dark-green) 0%, transparent 50%);
+  background-color: var(--camo-black);
+  background-size: 200% 200%;
+}
+
+.camo-texture {
+  position: relative;
+  overflow: hidden;
+}
+
+.camo-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 25% 45%, rgba(163, 133, 99, 0.3) 0%, transparent 35%),
+    radial-gradient(circle at 70% 15%, rgba(107, 122, 82, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 15% 85%, rgba(74, 93, 59, 0.3) 0%, transparent 35%),
+    radial-gradient(circle at 85% 65%, rgba(201, 176, 138, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(44, 62, 31, 0.35) 0%, transparent 45%);
+  background-size: 400px 400px, 350px 350px, 450px 450px, 380px 380px, 420px 420px;
+  background-position: 0 0, 100px 150px, 50px 250px, 200px 50px, 150px 100px;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.camo-texture > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tactical Border Styling */
+.tactical-border {
+  border: 2px solid var(--camo-olive);
+  border-image: linear-gradient(
+    135deg,
+    var(--camo-tan) 0%,
+    var(--camo-olive) 25%,
+    var(--camo-forest) 50%,
+    var(--camo-olive) 75%,
+    var(--camo-tan) 100%
+  ) 1;
+}
+
+/* Combat Stencil Effect */
+.combat-stencil {
+  text-shadow:
+    2px 2px 0px rgba(44, 62, 31, 0.8),
+    -1px -1px 0px rgba(201, 176, 138, 0.3);
+  letter-spacing: 0.05em;
+}
+
+/* Tactical Button Style */
+.tactical-btn {
+  background: linear-gradient(135deg, var(--camo-forest) 0%, var(--camo-dark-green) 100%);
+  border: 2px solid var(--camo-olive);
+  box-shadow:
+    inset 0 1px 0 rgba(201, 176, 138, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.tactical-btn:hover {
+  background: linear-gradient(135deg, var(--camo-olive) 0%, var(--camo-forest) 100%);
+  border-color: var(--combat-gold);
+  box-shadow:
+    inset 0 1px 0 rgba(201, 176, 138, 0.3),
+    0 6px 12px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(184, 150, 61, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Distressed/Worn Effect */
+.worn-effect {
+  position: relative;
+}
+
+.worn-effect::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+/* Tactical Grid Overlay */
+.tactical-grid {
+  background-image:
+    linear-gradient(var(--camo-olive) 1px, transparent 1px),
+    linear-gradient(90deg, var(--camo-olive) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.03;
 }
