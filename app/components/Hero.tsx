@@ -22,8 +22,12 @@ export default function Hero() {
         >
           {/* Title Card */}
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-black text-white mb-6 drop-shadow-2xl tracking-tight">
-            BANJO BOAT TOURS
+            FINN FRETWATER
           </h1>
+
+          <p className="text-xl md:text-3xl text-white/90 font-bold mb-8">
+            The Most Interesting Man in the South
+          </p>
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -31,14 +35,18 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="mb-8 max-w-4xl mx-auto"
           >
-            <p className="text-2xl md:text-4xl text-white font-bold mb-4">
-              Here at Banjo Boat Tours, We Love Two Things:
+            <p className="text-2xl md:text-4xl text-white font-bold mb-6">
+              I Love Two Things:
             </p>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-4xl md:text-6xl font-black">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-4xl md:text-6xl font-black mb-8">
               <span className="font-display" style={{ color: 'var(--cypress-gold)' }}>1. BANJOS</span>
               <span className="text-white text-3xl md:text-5xl">&</span>
-              <span className="font-display" style={{ color: 'var(--cypress-gold)' }}>2. BOAT TOURS</span>
+              <span className="font-display" style={{ color: 'var(--cypress-gold)' }}>2. THINKING</span>
             </div>
+            <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">
+              Between the river and the strings, my brain decided it wants to understand everything.
+              Tax strategy. Engineering. Sleep science. Mortgage refinancing. Air fryer physics.
+            </p>
           </motion.div>
 
           <motion.div
@@ -48,22 +56,23 @@ export default function Hero() {
             className="space-y-4"
           >
             {/* CTA Button */}
-            <button
-              className="group relative px-12 py-5 text-xl font-bold text-white overflow-hidden rounded-lg transition-all duration-300 hover:scale-105"
+            <a
+              href="/upstream-thinking"
+              className="inline-block group relative px-12 py-5 text-xl font-bold text-white overflow-hidden rounded-lg transition-all duration-300 hover:scale-105"
               style={{ backgroundColor: 'var(--cypress-gold)' }}
             >
-              <span className="relative z-10">BOOK NOW</span>
+              <span className="relative z-10">READ UPSTREAM THINKING</span>
               <div
                 className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   backgroundImage: 'linear-gradient(90deg, var(--swamp-moss), var(--muddy-brown))'
                 }}
               />
-            </button>
+            </a>
 
-            {/* Vague Tagline */}
-            <p className="text-sm md:text-base text-white/80 mt-6 italic">
-              Somewhere. Somehow. Someway. Banjos & Boats.
+            {/* Boat Tours Secondary CTA */}
+            <p className="text-sm md:text-base text-white/60 mt-4">
+              Boat tours launching 2027 • Somewhere
             </p>
           </motion.div>
         </motion.div>

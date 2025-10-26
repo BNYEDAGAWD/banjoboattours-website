@@ -4,12 +4,12 @@ import Navigation from "./components/Navigation";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Banjo Boat Tours - Banjos & Boats",
-  description: "We love two things: 1. Banjos & 2. Boat Tours. Experience the jacked muscular banjo-playing boat tour guide. Somewhere. Somehow. Someway.",
-  keywords: "banjo, boat tours, muscular guide, banjo player, boat, tour, experience, adventure",
+  title: "Finn Fretwater - The Most Interesting Man in the South | Upstream Thinking",
+  description: "Expert insights on everything from tax strategy to air fryers. Between the river and the strings, Finn Fretwater writes about whatever he's mastered this week. Boat tours launching 2027.",
+  keywords: "Finn Fretwater, expert advice, product reviews, tax strategy, productivity, home improvement, tech reviews, finance tips, health optimization, consumer guides, lifestyle optimization, banjo, boat tours",
   openGraph: {
-    title: "Banjo Boat Tours - We Love Banjos & Boat Tours",
-    description: "Somewhere. Somehow. Someway. Banjos & Boats.",
+    title: "Finn Fretwater - Upstream Thinking",
+    description: "Expert knowledge. Zero pretension. Maximum usefulness.",
     type: "website",
   },
 };

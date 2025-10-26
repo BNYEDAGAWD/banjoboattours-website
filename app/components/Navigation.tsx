@@ -12,25 +12,26 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl">🚤</span>
+            <span className="text-2xl">💪🎸</span>
             <span className="font-display text-xl font-bold" style={{ color: 'var(--cypress-gold)' }}>
-              BANJO BOAT TOURS
+              FINN FRETWATER
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
-              href="/"
-              className="text-gray-300 hover:text-white transition-colors font-medium"
+              href="/upstream-thinking"
+              className="text-white hover:text-yellow-400 transition-colors font-bold"
+              style={{ color: 'var(--cypress-gold)' }}
             >
-              Home
+              Upstream Thinking
             </Link>
             <Link
               href="/about"
               className="text-gray-300 hover:text-white transition-colors font-medium"
             >
-              About
+              About Finn
             </Link>
             <Link
               href="/contact"
@@ -40,15 +41,15 @@ export default function Navigation() {
             </Link>
             <Link
               href="/privacy"
-              className="text-gray-300 hover:text-white transition-colors font-medium"
+              className="text-gray-300 hover:text-white transition-colors font-medium text-sm"
             >
               Privacy
             </Link>
             <Link
-              href="/contact"
+              href="/upstream-thinking"
               className="px-6 py-2 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 rounded-lg font-bold transition-all"
             >
-              Book Now
+              Read Now
             </Link>
           </div>
 
@@ -87,18 +88,19 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2">
             <Link
-              href="/"
-              className="block py-2 text-gray-300 hover:text-white transition-colors"
+              href="/upstream-thinking"
+              className="block py-2 font-bold transition-colors"
+              style={{ color: 'var(--cypress-gold)' }}
               onClick={() => setIsOpen(false)}
             >
-              Home
+              Upstream Thinking
             </Link>
             <Link
               href="/about"
               className="block py-2 text-gray-300 hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              About
+              About Finn
             </Link>
             <Link
               href="/contact"
@@ -109,17 +111,17 @@ export default function Navigation() {
             </Link>
             <Link
               href="/privacy"
-              className="block py-2 text-gray-300 hover:text-white transition-colors"
+              className="block py-2 text-gray-300 hover:text-white transition-colors text-sm"
               onClick={() => setIsOpen(false)}
             >
               Privacy
             </Link>
             <Link
-              href="/contact"
+              href="/upstream-thinking"
               className="block mt-4 px-6 py-2 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700 rounded-lg font-bold transition-all text-center"
               onClick={() => setIsOpen(false)}
             >
-              Book Now
+              Read Now
             </Link>
           </div>
         )}
