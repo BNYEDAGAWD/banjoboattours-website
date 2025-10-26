@@ -41,7 +41,7 @@ export default function AdManager({ config, className = '' }: AdManagerProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [revenue, setRevenue] = useState<number>(0);
-  const refreshTimerRef = useRef<NodeJS.Timeout>();
+  const refreshTimerRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
   useEffect(() => {
     // Lazy load ads when they enter viewport
