@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚤 Banjo Boat Tours
 
-## Getting Started
+**Where Gators Meet Glam** - A reality TV-inspired tour company website merging Duck Dynasty's authentic Southern swamp culture with Real Housewives' aspirational luxury drama.
 
-First, run the development server:
+## 🎬 Project Overview
+
+This website combines Duck Dynasty authentic Southern swamp culture with Real Housewives aspirational luxury drama, professional programmatic advertising integration, high-performance Next.js architecture, and reality TV-inspired design aesthetic.
+
+## 🏗️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS v4 with custom design system
+- **Animations**: Framer Motion
+- **Media**: React Player for video backgrounds
+- **Ad Tech**: Google Publisher Tag (GPT) + Prebid.js
+- **Deployment**: GitHub Pages
+- **Domain**: banjoboattours.tours (Namecheap)
+
+## 🎨 Design System
+
+**Color Palette**: Swamp Moss (#4A5D23), Cypress Gold (#D4AF37), Muddy Brown (#8B7355), Champagne Rose (#F4C2C2), Dramatic Black (#1A1A1A), Sparkle White (#FFFFFF)
+
+**Typography**: Playfair Display (dramatic serif), Inter (clean sans-serif), Dancing Script (Southern charm)
+
+## 💰 Programmatic Ad Integration
+
+**Ad Slots**: Billboard/Header (970x250, 728x90), Sidebar (300x600, 300x250), In-Content (300x250, fluid), Footer (728x90, 320x50)
+
+**Ad Tech**: Google Publisher Tag (GPT), Prebid.js header bidding, 30-second refresh intervals, viewability-based refresh
+
+## 🚀 Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**GitHub Pages**: Automatically deploys on push to main via GitHub Actions
 
-## Learn More
+**Custom Domain Configuration**:
 
-To learn more about Next.js, take a look at the following resources:
+Namecheap DNS A Records:
+- 185.199.108.153
+- 185.199.109.153
+- 185.199.110.153
+- 185.199.111.153
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+CNAME Record: www → BNYEDAGAWD.github.io
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**GitHub Settings**: Repository Settings → Pages → Custom domain: banjoboattours.tours → Enforce HTTPS
 
-## Deploy on Vercel
+**SSL**: PositiveSSL (Namecheap Order #184906925)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📊 Performance Targets
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Core Web Vitals**: LCP < 2.5s, FID < 100ms, CLS < 0.1
+
+**Ad Metrics**: Viewability > 70%, CPM > $8, Fill Rate > 95%
+
+## 🎬 Tour "Episodes"
+
+1. **The Sunrise Saga** - Dawn tours ($89)
+2. **Gator Gossip** - Wildlife encounters ($129)
+3. **Champagne & Cypress** - Luxury sunset ($199)
+4. **Full Moon Feuds** - Night tours ($149)
+
+## 🎭 Brand Voice
+
+**Tone**: Authentic yet Elevated, Dramatic but Approachable
+
+**Sample Copy**: "Not your mama's swamp tour", "Where gators meet glam", "Drama? Only in the sunset"
+
+---
+
+Built with Claude Code | Next.js | Tailwind CSS | Framer Motion

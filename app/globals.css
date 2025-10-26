@@ -1,26 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&family=Dancing+Script:wght@700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Banjo Boat Tours Color Palette */
+  --swamp-moss: #4A5D23;
+  --cypress-gold: #D4AF37;
+  --muddy-brown: #8B7355;
+  --champagne-rose: #F4C2C2;
+  --dramatic-black: #1A1A1A;
+  --sparkle-white: #FFFFFF;
+
+  --background: var(--sparkle-white);
+  --foreground: var(--dramatic-black);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-swamp-moss: var(--swamp-moss);
+  --color-cypress-gold: var(--cypress-gold);
+  --color-muddy-brown: var(--muddy-brown);
+  --color-champagne-rose: var(--champagne-rose);
+  --color-dramatic-black: var(--dramatic-black);
+  --color-sparkle-white: var(--sparkle-white);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Typography Utilities */
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Reality TV Inspired Animations */
+@keyframes dramatic-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-dramatic-entrance {
+  animation: dramatic-entrance 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
 }
