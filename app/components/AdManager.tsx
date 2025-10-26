@@ -34,13 +34,7 @@ interface AdManagerProps {
   className?: string;
 }
 
-declare global {
-  interface Window {
-    googletag: any;
-    pbjs: any;
-    wbid: any;
-  }
-}
+// Global Window interface defined in app/types/global.d.ts
 
 export default function AdManager({ config, className = '' }: AdManagerProps) {
   const adRef = useRef<HTMLDivElement>(null);

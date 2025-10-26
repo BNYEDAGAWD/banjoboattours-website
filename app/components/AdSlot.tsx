@@ -80,22 +80,4 @@ function isInViewport(element: HTMLElement | null): boolean {
   );
 }
 
-// TypeScript declarations for Google Publisher Tag
-declare global {
-  interface Window {
-    googletag: {
-      cmd: Array<() => void>;
-      defineSlot: (adUnitPath: string, size: [number, number][] | string, divId: string) => {
-        addService: (service: unknown) => unknown;
-      } | null;
-      pubads: () => {
-        enableSingleRequest: () => void;
-        collapseEmptyDivs: () => void;
-        refresh: (slots: unknown[]) => void;
-      };
-      enableServices: () => void;
-      display: (divId: string) => void;
-      destroySlots: () => void;
-    };
-  }
-}
+// Global Window interface defined in app/types/global.d.ts
