@@ -1,0 +1,256 @@
+﻿2025-10-26T01:45:32.1758420Z Current runner version: '2.329.0'
+2025-10-26T01:45:32.1771250Z ##[group]Runner Image Provisioner
+2025-10-26T01:45:32.1771700Z Hosted Compute Agent
+2025-10-26T01:45:32.1772020Z Version: 20251016.436
+2025-10-26T01:45:32.1772370Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+2025-10-26T01:45:32.1772780Z Build Date: 2025-10-15T20:44:12Z
+2025-10-26T01:45:32.1773130Z ##[endgroup]
+2025-10-26T01:45:32.1773430Z ##[group]Operating System
+2025-10-26T01:45:32.1773750Z macOS
+2025-10-26T01:45:32.1774030Z 15.7.1
+2025-10-26T01:45:32.1774300Z 24G231
+2025-10-26T01:45:32.1774560Z ##[endgroup]
+2025-10-26T01:45:32.1774840Z ##[group]Runner Image
+2025-10-26T01:45:32.1775150Z Image: macos-15-arm64
+2025-10-26T01:45:32.1775440Z Version: 20251021.0066
+2025-10-26T01:45:32.1776080Z Included Software: https://github.com/actions/runner-images/blob/macos-15-arm64/20251021.0066/images/macos/macos-15-arm64-Readme.md
+2025-10-26T01:45:32.1777020Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-15-arm64%2F20251021.0066
+2025-10-26T01:45:32.1777590Z ##[endgroup]
+2025-10-26T01:45:32.1778210Z ##[group]GITHUB_TOKEN Permissions
+2025-10-26T01:45:32.1779050Z Contents: read
+2025-10-26T01:45:32.1779330Z Metadata: read
+2025-10-26T01:45:32.1779610Z Pages: write
+2025-10-26T01:45:32.1779880Z ##[endgroup]
+2025-10-26T01:45:32.1781060Z Secret source: Actions
+2025-10-26T01:45:32.1781420Z Prepare workflow directory
+2025-10-26T01:45:32.1990030Z Prepare all required actions
+2025-10-26T01:45:32.2017100Z Getting action download info
+2025-10-26T01:45:32.5766940Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-10-26T01:45:32.9978700Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-10-26T01:45:33.1735620Z Download action repository 'actions/configure-pages@v4' (SHA:1f0c5cde4bc74cd7e1254d0cb4de8d49e9068c7d)
+2025-10-26T01:45:34.2830240Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+2025-10-26T01:45:35.0234450Z Getting action download info
+2025-10-26T01:45:35.1632980Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-10-26T01:45:35.2979800Z Complete job name: build
+2025-10-26T01:45:35.3393130Z ##[group]Run actions/checkout@v4
+2025-10-26T01:45:35.3393730Z with:
+2025-10-26T01:45:35.3394050Z   repository: BNYEDAGAWD/banjoboattours-website
+2025-10-26T01:45:35.3394640Z   token: ***
+2025-10-26T01:45:35.3394910Z   ssh-strict: true
+2025-10-26T01:45:35.3395180Z   ssh-user: git
+2025-10-26T01:45:35.3395460Z   persist-credentials: true
+2025-10-26T01:45:35.3395810Z   clean: true
+2025-10-26T01:45:35.3396090Z   sparse-checkout-cone-mode: true
+2025-10-26T01:45:35.3396430Z   fetch-depth: 1
+2025-10-26T01:45:35.3396710Z   fetch-tags: false
+2025-10-26T01:45:35.3397110Z   show-progress: true
+2025-10-26T01:45:35.3398040Z   lfs: false
+2025-10-26T01:45:35.3398330Z   submodules: false
+2025-10-26T01:45:35.3398620Z   set-safe-directory: true
+2025-10-26T01:45:35.3399400Z ##[endgroup]
+2025-10-26T01:45:35.6499750Z Syncing repository: BNYEDAGAWD/banjoboattours-website
+2025-10-26T01:45:35.6500900Z ##[group]Getting Git version info
+2025-10-26T01:45:35.6501540Z Working directory is '/Users/runner/work/banjoboattours-website/banjoboattours-website'
+2025-10-26T01:45:35.6502330Z [command]/opt/homebrew/bin/git version
+2025-10-26T01:45:35.6850700Z git version 2.50.1
+2025-10-26T01:45:35.6886420Z ##[endgroup]
+2025-10-26T01:45:35.6896020Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/0568a8e5-4b9a-48a5-afd3-5d7f90c90de4/.gitconfig'
+2025-10-26T01:45:35.6898490Z Temporarily overriding HOME='/Users/runner/work/_temp/0568a8e5-4b9a-48a5-afd3-5d7f90c90de4' before making global git config changes
+2025-10-26T01:45:35.6899590Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-26T01:45:35.6907120Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/banjoboattours-website/banjoboattours-website
+2025-10-26T01:45:35.6995840Z Deleting the contents of '/Users/runner/work/banjoboattours-website/banjoboattours-website'
+2025-10-26T01:45:35.6997840Z ##[group]Initializing the repository
+2025-10-26T01:45:35.7001670Z [command]/opt/homebrew/bin/git init /Users/runner/work/banjoboattours-website/banjoboattours-website
+2025-10-26T01:45:35.7197980Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-10-26T01:45:35.7199070Z hint: is subject to change. To configure the initial branch name to use in all
+2025-10-26T01:45:35.7199850Z hint: of your new repositories, which will suppress this warning, call:
+2025-10-26T01:45:35.7200450Z hint:
+2025-10-26T01:45:35.7200970Z hint: 	git config --global init.defaultBranch <name>
+2025-10-26T01:45:35.7201490Z hint:
+2025-10-26T01:45:35.7201980Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-10-26T01:45:35.7202740Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-10-26T01:45:35.7203380Z hint:
+2025-10-26T01:45:35.7203760Z hint: 	git branch -m <name>
+2025-10-26T01:45:35.7204220Z hint:
+2025-10-26T01:45:35.7204650Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-10-26T01:45:35.7205580Z Initialized empty Git repository in /Users/runner/work/banjoboattours-website/banjoboattours-website/.git/
+2025-10-26T01:45:35.7210050Z [command]/opt/homebrew/bin/git remote add origin https://github.com/BNYEDAGAWD/banjoboattours-website
+2025-10-26T01:45:35.7264110Z ##[endgroup]
+2025-10-26T01:45:35.7264770Z ##[group]Disabling automatic garbage collection
+2025-10-26T01:45:35.7266890Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2025-10-26T01:45:35.7331680Z ##[endgroup]
+2025-10-26T01:45:35.7334690Z ##[group]Setting up auth
+2025-10-26T01:45:35.7336230Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-10-26T01:45:35.7441430Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-10-26T01:45:35.8513270Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-26T01:45:35.8572230Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-10-26T01:45:36.0226460Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-10-26T01:45:36.0302690Z ##[endgroup]
+2025-10-26T01:45:36.0303980Z ##[group]Fetching the repository
+2025-10-26T01:45:36.0306010Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +890b5084867c3d6d3bf505d31c4f3521c199b334:refs/remotes/origin/main
+2025-10-26T01:45:36.6930730Z From https://github.com/BNYEDAGAWD/banjoboattours-website
+2025-10-26T01:45:36.6932350Z  * [new ref]         890b5084867c3d6d3bf505d31c4f3521c199b334 -> origin/main
+2025-10-26T01:45:36.7009460Z ##[endgroup]
+2025-10-26T01:45:36.7010640Z ##[group]Determining the checkout info
+2025-10-26T01:45:36.7011540Z ##[endgroup]
+2025-10-26T01:45:36.7012490Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2025-10-26T01:45:36.7063030Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2025-10-26T01:45:36.7116760Z ##[group]Checking out the ref
+2025-10-26T01:45:36.7118460Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-10-26T01:45:36.7254540Z Switched to a new branch 'main'
+2025-10-26T01:45:36.7356330Z branch 'main' set up to track 'origin/main'.
+2025-10-26T01:45:36.7660260Z ##[endgroup]
+2025-10-26T01:45:36.7682250Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2025-10-26T01:45:36.7683000Z 890b5084867c3d6d3bf505d31c4f3521c199b334
+2025-10-26T01:45:36.7861090Z ##[group]Run actions/setup-node@v4
+2025-10-26T01:45:36.7862070Z with:
+2025-10-26T01:45:36.7862540Z   node-version: 20
+2025-10-26T01:45:36.7863060Z   cache: npm
+2025-10-26T01:45:36.7863550Z   always-auth: false
+2025-10-26T01:45:36.7864130Z   check-latest: false
+2025-10-26T01:45:36.7864890Z   token: ***
+2025-10-26T01:45:36.7865380Z ##[endgroup]
+2025-10-26T01:45:36.9451320Z Found in cache @ /Users/runner/hostedtoolcache/node/20.19.5/arm64
+2025-10-26T01:45:36.9452790Z ##[group]Environment details
+2025-10-26T01:45:37.2754480Z node: v20.19.5
+2025-10-26T01:45:37.2755440Z npm: 10.8.2
+2025-10-26T01:45:37.2756250Z yarn: 1.22.22
+2025-10-26T01:45:37.2773490Z ##[endgroup]
+2025-10-26T01:45:37.2779840Z [command]/Users/runner/hostedtoolcache/node/20.19.5/arm64/bin/npm config get cache
+2025-10-26T01:45:37.3942570Z /Users/runner/.npm
+2025-10-26T01:45:37.6341190Z npm cache is not found
+2025-10-26T01:45:37.6403770Z ##[group]Run actions/configure-pages@v4
+2025-10-26T01:45:37.6403990Z with:
+2025-10-26T01:45:37.6404120Z   static_site_generator: next
+2025-10-26T01:45:37.6404430Z   token: ***
+2025-10-26T01:45:37.6404560Z   enablement: false
+2025-10-26T01:45:37.6404700Z ##[endgroup]
+2025-10-26T01:45:38.0674200Z Using default blank configuration
+2025-10-26T01:45:38.0674880Z Injecting property=basePath and value=/banjoboattours-website in:
+2025-10-26T01:45:38.0675380Z // Default Pages configuration for Next
+2025-10-26T01:45:38.0675770Z const nextConfig = {}
+2025-10-26T01:45:38.0676100Z module.exports = nextConfig
+2025-10-26T01:45:38.0676320Z 
+2025-10-26T01:45:38.0698630Z Found configuration object in indirect module export
+2025-10-26T01:45:38.0699090Z Injection successful, new configuration:
+2025-10-26T01:45:38.0699490Z // Default Pages configuration for Next
+2025-10-26T01:45:38.0699940Z const nextConfig = {basePath: "/banjoboattours-website"}
+2025-10-26T01:45:38.0700400Z module.exports = nextConfig
+2025-10-26T01:45:38.0700610Z 
+2025-10-26T01:45:38.0700990Z Injecting property=experimental.images.unoptimized and value=true in:
+2025-10-26T01:45:38.0701480Z // Default Pages configuration for Next
+2025-10-26T01:45:38.0701950Z const nextConfig = {basePath: "/banjoboattours-website"}
+2025-10-26T01:45:38.0702320Z module.exports = nextConfig
+2025-10-26T01:45:38.0702540Z 
+2025-10-26T01:45:38.0705510Z Found configuration object in indirect module export
+2025-10-26T01:45:38.0705930Z Injection successful, new configuration:
+2025-10-26T01:45:38.0706300Z // Default Pages configuration for Next
+2025-10-26T01:45:38.0706920Z const nextConfig = {experimental: {images: {unoptimized: true}},basePath: "/banjoboattours-website"}
+2025-10-26T01:45:38.0707390Z module.exports = nextConfig
+2025-10-26T01:45:38.0707610Z 
+2025-10-26T01:45:38.0707900Z Injecting property=images.unoptimized and value=true in:
+2025-10-26T01:45:38.0708330Z // Default Pages configuration for Next
+2025-10-26T01:45:38.0708930Z const nextConfig = {experimental: {images: {unoptimized: true}},basePath: "/banjoboattours-website"}
+2025-10-26T01:45:38.0709410Z module.exports = nextConfig
+2025-10-26T01:45:38.0709630Z 
+2025-10-26T01:45:38.0710200Z Found configuration object in indirect module export
+2025-10-26T01:45:38.0710920Z Injection successful, new configuration:
+2025-10-26T01:45:38.0711310Z // Default Pages configuration for Next
+2025-10-26T01:45:38.0712120Z const nextConfig = {images: {unoptimized: true},experimental: {images: {unoptimized: true}},basePath: "/banjoboattours-website"}
+2025-10-26T01:45:38.0712660Z module.exports = nextConfig
+2025-10-26T01:45:38.0712880Z 
+2025-10-26T01:45:38.0780460Z ##[group]Run npm ci
+2025-10-26T01:45:38.0780690Z [36;1mnpm ci[0m
+2025-10-26T01:45:38.0826110Z shell: /bin/bash -e {0}
+2025-10-26T01:45:38.0826340Z env:
+2025-10-26T01:45:38.0826480Z   GITHUB_PAGES: true
+2025-10-26T01:45:38.0826860Z ##[endgroup]
+2025-10-26T01:45:49.4427790Z 
+2025-10-26T01:45:49.4481260Z added 426 packages, and audited 427 packages in 11s
+2025-10-26T01:45:49.4482010Z 
+2025-10-26T01:45:49.4483210Z 152 packages are looking for funding
+2025-10-26T01:45:49.4484010Z   run `npm fund` for details
+2025-10-26T01:45:49.4509100Z 
+2025-10-26T01:45:49.4509250Z found 0 vulnerabilities
+2025-10-26T01:45:49.4725990Z ##[group]Run npm run build
+2025-10-26T01:45:49.4726230Z [36;1mnpm run build[0m
+2025-10-26T01:45:49.4760760Z shell: /bin/bash -e {0}
+2025-10-26T01:45:49.4761010Z env:
+2025-10-26T01:45:49.4761150Z   GITHUB_PAGES: true
+2025-10-26T01:45:49.4761300Z ##[endgroup]
+2025-10-26T01:45:49.6205240Z 
+2025-10-26T01:45:49.6205770Z > banjoboattours@0.1.0 build
+2025-10-26T01:45:49.6206020Z > next build
+2025-10-26T01:45:49.6206100Z 
+2025-10-26T01:45:50.0225740Z  ⚠ Invalid next.config.js options detected: 
+2025-10-26T01:45:50.0228820Z  ⚠     Unrecognized key(s) in object: 'images' at "experimental"
+2025-10-26T01:45:50.0229830Z  ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+2025-10-26T01:45:50.0875350Z ⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2025-10-26T01:45:50.1041650Z Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-10-26T01:45:50.1042790Z This information is used to shape Next.js' roadmap and prioritize features.
+2025-10-26T01:45:50.1043740Z You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2025-10-26T01:45:50.1044480Z https://nextjs.org/telemetry
+2025-10-26T01:45:50.1044810Z 
+2025-10-26T01:45:50.1146640Z    ▲ Next.js 16.0.0 (Turbopack)
+2025-10-26T01:45:50.1147260Z    - Experiments (use with caution):
+2025-10-26T01:45:50.1147800Z      ? images (invalid experimental key)
+2025-10-26T01:45:50.1148120Z 
+2025-10-26T01:45:50.1629190Z    Creating an optimized production build ...
+2025-10-26T01:45:53.6700180Z  ✓ Compiled successfully in 3.3s
+2025-10-26T01:45:53.6801290Z    Running TypeScript ...
+2025-10-26T01:45:55.7530690Z    Collecting page data ...
+2025-10-26T01:45:56.0371980Z    Generating static pages (0/4) ...
+2025-10-26T01:45:56.3124870Z    Generating static pages (1/4) 
+2025-10-26T01:45:56.3227340Z    Generating static pages (2/4) 
+2025-10-26T01:45:56.3328360Z    Generating static pages (3/4) 
+2025-10-26T01:45:56.3430710Z  ✓ Generating static pages (4/4) in 275.8ms
+2025-10-26T01:45:56.3530670Z    Finalizing page optimization ...
+2025-10-26T01:45:56.3631590Z 
+2025-10-26T01:45:56.3670730Z Route (app)
+2025-10-26T01:45:56.3688150Z ┌ ○ /
+2025-10-26T01:45:56.3688860Z └ ○ /_not-found
+2025-10-26T01:45:56.3706890Z 
+2025-10-26T01:45:56.3707320Z 
+2025-10-26T01:45:56.3707930Z ○  (Static)  prerendered as static content
+2025-10-26T01:45:56.3708110Z 
+2025-10-26T01:45:56.4445720Z ##[group]Run actions/upload-pages-artifact@v3
+2025-10-26T01:45:56.4446100Z with:
+2025-10-26T01:45:56.4446310Z   path: ./out
+2025-10-26T01:45:56.4446530Z   name: github-pages
+2025-10-26T01:45:56.4446740Z   retention-days: 1
+2025-10-26T01:45:56.4447020Z env:
+2025-10-26T01:45:56.4447190Z   GITHUB_PAGES: true
+2025-10-26T01:45:56.4447390Z ##[endgroup]
+2025-10-26T01:45:56.4525790Z ##[group]Run echo ::group::Archive artifact
+2025-10-26T01:45:56.4526180Z [36;1mecho ::group::Archive artifact[0m
+2025-10-26T01:45:56.4526420Z [36;1mgtar \[0m
+2025-10-26T01:45:56.4526760Z [36;1m  --dereference --hard-dereference \[0m
+2025-10-26T01:45:56.4527060Z [36;1m  --directory "$INPUT_PATH" \[0m
+2025-10-26T01:45:56.4527350Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2025-10-26T01:45:56.4527620Z [36;1m  --exclude=.git \[0m
+2025-10-26T01:45:56.4527960Z [36;1m  --exclude=.github \[0m
+2025-10-26T01:45:56.4528240Z [36;1m  .[0m
+2025-10-26T01:45:56.4528450Z [36;1mecho ::endgroup::[0m
+2025-10-26T01:45:56.4569830Z shell: /bin/sh -e {0}
+2025-10-26T01:45:56.4570180Z env:
+2025-10-26T01:45:56.4570380Z   GITHUB_PAGES: true
+2025-10-26T01:45:56.4570580Z   INPUT_PATH: ./out
+2025-10-26T01:45:56.4570800Z ##[endgroup]
+2025-10-26T01:45:56.5073600Z ##[group]Archive artifact
+2025-10-26T01:45:56.5149980Z gtar: out: Cannot open: No such file or directory
+2025-10-26T01:45:56.5153010Z gtar: Error is not recoverable: exiting now
+2025-10-26T01:45:56.5162330Z ##[error]Process completed with exit code 2.
+2025-10-26T01:45:56.5355330Z Post job cleanup.
+2025-10-26T01:45:56.6657940Z [command]/opt/homebrew/bin/git version
+2025-10-26T01:45:56.6760440Z git version 2.50.1
+2025-10-26T01:45:56.7267650Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/b1a02f0d-31c4-4edc-b1ae-072de244f4fb/.gitconfig'
+2025-10-26T01:45:56.7369400Z Temporarily overriding HOME='/Users/runner/work/_temp/b1a02f0d-31c4-4edc-b1ae-072de244f4fb' before making global git config changes
+2025-10-26T01:45:56.7470830Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-26T01:45:56.7572440Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/banjoboattours-website/banjoboattours-website
+2025-10-26T01:45:56.7874650Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-10-26T01:45:56.8119350Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-10-26T01:45:56.8254650Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-26T01:45:56.8299950Z http.https://github.com/.extraheader
+2025-10-26T01:45:56.8339780Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-10-26T01:45:56.8354680Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-10-26T01:45:56.9635900Z Cleaning up orphan processes
