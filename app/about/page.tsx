@@ -2,20 +2,23 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
-      <div className="max-w-4xl mx-auto px-6 py-16">
-        <h1 className="text-5xl font-black mb-8 font-display" style={{ color: 'var(--cypress-gold)' }}>
-          About Banjo Boat Tours
-        </h1>
+    <main className="min-h-screen camo-bg camo-texture">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 pointer-events-none"></div>
+
+      <div className="relative z-10">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <h1 className="text-5xl font-black mb-8 font-display combat-stencil" style={{ color: 'var(--combat-gold)' }}>
+            About Banjo Boat Tours
+          </h1>
 
         <div className="space-y-12">
           {/* Main Story */}
           <section>
-            <p className="text-2xl text-gray-300 leading-relaxed mb-6">
-              We Love Two Things: <span className="font-bold" style={{ color: 'var(--cypress-gold)' }}>1. Banjos</span> &{' '}
-              <span className="font-bold" style={{ color: 'var(--cypress-gold)' }}>2. Boat Tours</span>
+            <p className="text-2xl leading-relaxed mb-6" style={{ color: 'var(--camo-sand)' }}>
+              We Love Two Things: <span className="font-bold" style={{ color: 'var(--combat-gold)' }}>1. Banjos</span> &{' '}
+              <span className="font-bold" style={{ color: 'var(--combat-gold)' }}>2. Boat Tours</span>
             </p>
-            <p className="text-xl text-gray-400 leading-relaxed">
+            <p className="text-xl leading-relaxed" style={{ color: 'var(--camo-olive)' }}>
               That's it. That's the entire business model. One jacked muscular banjo-playing boat tour guide.
               One river (we won't tell you which one). Unlimited bicep flexing. Maximum banjo strumming.
             </p>
@@ -212,11 +215,12 @@ export default function About() {
             </a>
           </section>
 
-          <div className="mt-16 pt-8 border-t border-gray-700">
-            <p className="text-center text-gray-500">
+          <div className="mt-16 pt-8 tactical-border" style={{ borderTop: '2px solid var(--camo-olive)' }}>
+            <p className="text-center" style={{ color: 'var(--camo-olive)' }}>
               🚤 Banjo Boat Tours - We Love Two Things: 1. Banjos & 2. Boat Tours 💪🎸
             </p>
           </div>
+        </div>
         </div>
       </div>
     </main>

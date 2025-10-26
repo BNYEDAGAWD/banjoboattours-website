@@ -179,47 +179,50 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
-      {/* Leaderboard Ad - Above Article */}
-      <div className="max-w-6xl mx-auto px-6 pt-6">
-        <AdManager
-          config={{
-            slotId: 'article-top-leaderboard',
-            sizes: [[728, 90], [970, 90], 'fluid'],
-            position: 'header',
-            refreshInterval: 45,
-          }}
-        />
-      </div>
+    <main className="min-h-screen camo-bg camo-texture">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/85 pointer-events-none"></div>
 
-      <article className="max-w-4xl mx-auto px-6 py-12">
-        {/* Article Header */}
-        <header className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="px-4 py-2 bg-gradient-to-r from-cyan-600/30 to-purple-600/30 rounded-full text-sm font-bold border border-cyan-500/50">
-              {article.category}
-            </span>
-            <time className="text-gray-400">{new Date(article.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-            <span className="text-gray-400">•</span>
-            <span className="text-gray-400">{article.readTime} min read</span>
-          </div>
+      <div className="relative z-10">
+        {/* Leaderboard Ad - Above Article */}
+        <div className="max-w-6xl mx-auto px-6 pt-6">
+          <AdManager
+            config={{
+              slotId: 'article-top-leaderboard',
+              sizes: [[728, 90], [970, 90], 'fluid'],
+              position: 'header',
+              refreshInterval: 45,
+            }}
+          />
+        </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 font-display leading-tight">
-            {article.title}
-          </h1>
-
-          <p className="text-xl text-gray-300 leading-relaxed">
-            {article.excerpt}
-          </p>
-
-          <div className="mt-6 flex items-center gap-4">
-            <div className="text-3xl">💪🎸</div>
-            <div>
-              <div className="font-bold text-white">By {article.author}</div>
-              <div className="text-sm text-gray-400">The Most Interesting Man in the South</div>
+        <article className="max-w-4xl mx-auto px-6 py-12">
+          {/* Article Header */}
+          <header className="mb-12">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider tactical-border" style={{ backgroundColor: 'var(--camo-dark-green)', borderColor: 'var(--camo-olive)', color: 'var(--combat-gold)' }}>
+                {article.category}
+              </span>
+              <time style={{ color: 'var(--camo-olive)' }}>{new Date(article.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+              <span style={{ color: 'var(--camo-olive)' }}>•</span>
+              <span style={{ color: 'var(--camo-olive)' }}>{article.readTime} min read</span>
             </div>
-          </div>
-        </header>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 font-display leading-tight combat-stencil" style={{ color: 'var(--camo-cream)' }}>
+              {article.title}
+            </h1>
+
+            <p className="text-xl leading-relaxed" style={{ color: 'var(--camo-sand)' }}>
+              {article.excerpt}
+            </p>
+
+            <div className="mt-6 flex items-center gap-4">
+              <div className="text-3xl">💪🎸</div>
+              <div>
+                <div className="font-bold" style={{ color: 'var(--camo-cream)' }}>By {article.author}</div>
+                <div className="text-sm" style={{ color: 'var(--camo-olive)' }}>The Most Interesting Man in the South</div>
+              </div>
+            </div>
+          </header>
 
         {/* In-Article Ad - After Header */}
         <div className="my-12">
@@ -322,6 +325,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             refreshInterval: 45,
           }}
         />
+      </div>
       </div>
     </main>
   );

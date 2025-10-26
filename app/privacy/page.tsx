@@ -1,10 +1,13 @@
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
-      <div className="max-w-4xl mx-auto px-6 py-16">
-        <h1 className="text-5xl font-black mb-8 font-display" style={{ color: 'var(--cypress-gold)' }}>
-          Privacy Policy
-        </h1>
+    <main className="min-h-screen camo-bg camo-texture">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 pointer-events-none"></div>
+
+      <div className="relative z-10">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <h1 className="text-5xl font-black mb-8 font-display combat-stencil" style={{ color: 'var(--combat-gold)' }}>
+            Privacy Policy
+          </h1>
 
         <div className="space-y-8 text-gray-300 leading-relaxed">
           <section>
@@ -141,6 +144,7 @@ export default function PrivacyPolicy() {
               🚤 Banjo Boat Tours - We Love Two Things: 1. Banjos & 2. Boat Tours 💪🎸
             </p>
           </div>
+        </div>
         </div>
       </div>
     </main>
