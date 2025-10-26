@@ -185,14 +185,175 @@ export default function RootLayout({
           async
         />
 
-        {/* Ezoic - AI-powered optimization (when approved) */}
-        {/* <Script
+        {/* === GOOGLE MCM/ADX PARTNERS (Maximum Revenue Optimization) === */}
+
+        {/* 1. EZOIC - MCM Partner (Access Now - No 10k pageview limit!) */}
+        {/* Ezoic provides direct Google AdX access for publishers of ALL sizes */}
+        {/* Replace YOUR_EZOIC_ID after approval at https://www.ezoic.com */}
+        <Script
+          id="ezoic-setup"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var ezoicId = 'YOUR_EZOIC_ID'; // Replace with your Ezoic Publisher ID
+              if(typeof ezstandalone !== 'undefined') {
+                ezstandalone.cmd.push(function() {
+                  ezstandalone.define('YOUR_EZOIC_ID');
+                  ezstandalone.enable();
+                  ezstandalone.display();
+                });
+              }
+            `,
+          }}
+        />
+        <Script
           src="//go.ezoic.net/ezoic/ezoic.js"
-          strategy="lazyOnload"
+          strategy="beforeInteractive"
+          async
+        />
+
+        {/* 2. ADSTERRA - 30k+ Publishers, 10+ Years Experience */}
+        {/* Sign up at https://publishers.adsterra.com */}
+        {/* Supports Display, Popunder, Social Bar, Native, and Video ads */}
+        <Script
+          id="adsterra-setup"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.adstertaConfig = {
+                publisherId: 'YOUR_ADSTERRA_PUBLISHER_ID', // Replace after signup
+                zoneIds: {
+                  header: 'YOUR_HEADER_ZONE_ID',
+                  sidebar: 'YOUR_SIDEBAR_ZONE_ID',
+                  inContent: 'YOUR_IN_CONTENT_ZONE_ID',
+                  footer: 'YOUR_FOOTER_ZONE_ID'
+                }
+              };
+            `,
+          }}
+        />
+
+        {/* 3. MEDIAVINE JOURNEY - Premium Ad Management (Requires 10k+ sessions) */}
+        {/* Apply at https://www.mediavine.com/journey */}
+        {/* Self-service platform, separate from main Mediavine */}
+        <Script
+          id="mediavine-journey"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Mediavine Journey Script Wrapper
+              window.mediaVineJourney = window.mediaVineJourney || {
+                settings: {
+                  siteId: 'YOUR_MEDIAVINE_SITE_ID', // Replace after approval
+                  adRefresh: true,
+                  lazyLoad: true,
+                  stickyNav: false
+                },
+                placeholders: []
+              };
+            `,
+          }}
+        />
+        {/* Uncomment after Mediavine Journey approval (requires 10k+ monthly sessions) */}
+        {/* <Script
+          src="https://scripts.mediavine.com/tags/YOUR_MEDIAVINE_SITE_ID.js"
+          strategy="beforeInteractive"
           async
         /> */}
 
-        {/* Revenue Analytics */}
+        {/* 4. MONUMETRIC - Ad Management for All Publisher Sizes */}
+        {/* Better alternative to AdSense, comparable CPMs to Setupad/Raptive */}
+        {/* Apply at https://www.monumetric.com */}
+        <Script
+          id="monumetric-setup"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.MonumetricObject = 'MonumetricObject';
+              window.MonumetricObject = window.MonumetricObject || [];
+              window.MonumetricObject.push({
+                slot_id: 'YOUR_MONUMETRIC_SLOT_ID', // Replace after approval
+                publisher_id: 'YOUR_MONUMETRIC_PUBLISHER_ID',
+                settings: {
+                  lazy_load: true,
+                  refresh: true,
+                  refresh_interval: 30000, // 30 seconds
+                  viewability_threshold: 0.5
+                }
+              });
+            `,
+          }}
+        />
+        {/* Uncomment after Monumetric approval */}
+        {/* <Script
+          src="//tag.monu.delivery/YOUR_MONUMETRIC_PUBLISHER_ID.js"
+          strategy="afterInteractive"
+          async
+        /> */}
+
+        {/* MCM/AdX Optimization: Ad Refresh Coordination */}
+        <Script
+          id="mcm-refresh-coordinator"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Coordinates ad refresh across all MCM partners for maximum revenue
+              window.mcmRefreshCoordinator = {
+                activePartners: [],
+                refreshInterval: 30000, // 30 seconds default
+
+                registerPartner: function(partnerName) {
+                  if (!this.activePartners.includes(partnerName)) {
+                    this.activePartners.push(partnerName);
+                  }
+                },
+
+                coordinateRefresh: function() {
+                  // Ezoic auto-refresh (if active)
+                  if (typeof ezstandalone !== 'undefined' && this.activePartners.includes('ezoic')) {
+                    ezstandalone.refresh();
+                  }
+
+                  // Adsterra refresh (manual implementation)
+                  if (typeof window.adstertaConfig !== 'undefined' && this.activePartners.includes('adsterra')) {
+                    // Adsterra uses iframe-based ads, refresh handled server-side
+                  }
+
+                  // Mediavine Journey refresh
+                  if (typeof window.mediaVineJourney !== 'undefined' && this.activePartners.includes('mediavine')) {
+                    // Mediavine handles refresh internally
+                  }
+
+                  // Monumetric refresh
+                  if (typeof window.MonumetricObject !== 'undefined' && this.activePartners.includes('monumetric')) {
+                    // Monumetric auto-refresh configured above
+                  }
+
+                  // Prebid + WBID refresh (existing)
+                  if (window.pbjs && this.activePartners.includes('prebid')) {
+                    window.pbjs.que.push(function() {
+                      window.pbjs.requestBids({
+                        timeout: 1500,
+                        bidsBackHandler: function() {
+                          if (window.googletag) {
+                            window.googletag.pubads().refresh();
+                          }
+                        }
+                      });
+                    });
+                  }
+                }
+              };
+
+              // Start coordinated refresh
+              setInterval(function() {
+                window.mcmRefreshCoordinator.coordinateRefresh();
+              }, window.mcmRefreshCoordinator.refreshInterval);
+            `,
+          }}
+        />
+
+        {/* Revenue Analytics (Enhanced for MCM Partners) */}
         <Script
           id="revenue-analytics"
           strategy="afterInteractive"
